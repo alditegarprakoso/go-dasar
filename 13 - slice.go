@@ -48,6 +48,8 @@ func main() {
 	newSlice[1] = "Tegar"
 
 	fmt.Println(newSlice)
+	fmt.Println(len(newSlice))
+	fmt.Println(cap(newSlice))
 
 	copySlice := make([]string, len(newSlice), cap(newSlice))
 	copy(copySlice, newSlice) // copy ini berfungsi untuk mengcopy slice yang sudah ada, dan pastikan ya lenght/len, kapasitas nya harus sama, kalau tidak nanti bakal kepotong
