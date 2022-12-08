@@ -26,4 +26,9 @@ func main() {
 	// len berfungsi untuk menghitung panjang pada array , len ini bukan jumlah data tetapi memang panjang dari si array
 	fmt.Println(len(names))
 	fmt.Println(len(values))
+
+	// [...] di gunakan untuk mendeklarasikan array tanpa batas maksimum data
+	var unlimitedArray = [...]string{"Aldi", "Tegar", "Prakoso"}
+	fmt.Println(unlimitedArray)
+	fmt.Println(unlimitedArray[0])
 }
